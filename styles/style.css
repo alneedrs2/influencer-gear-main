@@ -1,0 +1,232 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@500&display=swap');
+/* common styles */
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(172, 255, 47, 0.171);
+}
+/*-------------
+   Home Section 
+-------------- */
+header{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left:32px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-menu a{
+    text-decoration: none;
+    color: black;
+    margin-right: 34px;
+}
+nav .nav-menu a:hover{
+    background-color: rgba(7, 129, 167, 0.836);
+    padding: 0px 10px;
+    border-radius: 5px;
+    
+}
+nav .nav-title:hover{
+    color: slateblue;
+    transform: scale(1.1);
+    transition: transform 1.2s ease-out;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ---------------------
+Influencer first section
+------------------------ */
+.influences{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 133px;
+    margin-bottom: 100px;
+    margin-left: 32px;
+}
+.influence{
+    display: flex;
+    margin-right: 32px;
+}
+.influence-info{
+    padding-left: 5px;
+}
+.influence-info:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+.thumbnail img:hover{
+    transform: rotate(60deg);
+    transition: transform 2s ease-in-out;
+}
+.thumbnail img{
+    width: 440px;
+    height: 414px;
+    left: 835px;
+    top: 211px;
+    
+}
+.influence-info{
+    width: 582px;
+    height: 270px;
+    left: 120px;
+    top: 285px;
+    margin-right: 32px;
+    margin-top: 50px;
+
+}
+.influence-title{
+    font-size: 26px;
+    font-weight: 700;
+    width: 582px;
+    background: 1px solid #7e6767;
+}
+.link-button{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-image: linear-gradient(deeppink, lightpink);
+    padding: 10px 40px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.container{
+    background-color: #aaaaaa11;
+    width: 1047px;
+    padding: 30px;
+    border-radius: 5px;
+    }
+
+/* --------------------------
+   Popular collection styles
+----------------------------- */
+.container:hover{
+     border: 2px solid skyblue;
+}
+.section-title{
+     background-color: #FFFFFF;
+     text-align: center;
+     border: 1px solid #FFFFFF;
+     margin-bottom: 30px;
+ }
+ .collection-banner img{
+    width: 300px;
+    height: 256px;
+ }
+ .collection .collection-banner img{
+     overflow: hidden;
+ }
+ .collection .collection-banner img:hover{
+     transform: scale(1.1);
+     transition: transform 1s ease-in-out;
+ }
+ span{
+    font-family: Inter;
+    font-weight: 400px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.986);;
+ }
+ .collections{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+ .collection{
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    width: 329px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 40px rgb(82, 69, 69);
+    padding-left: 12px;
+ }
+ 
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.popular-a a{
+    color: 
+    #E02C6D;
+    text-decoration: none;
+}
+.popular-a{
+    text-align: end;
+}
+
+/* ----------
+ wises-section
+------------- */
+.wises{
+    background-color: #2f4469;
+    width: 1050px;
+    height: 270px;
+    margin-top: 70px;
+}
+.wises:hover{
+    transform: scale(1.3);
+    transition: transform 1.7s ease-in-out;
+}
+.wise-title{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* -----------
+ footer section 
+--------------- */
+footer{
+    margin-top:60px;
+}
+.footer-items{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 5px;
+}
+/* -----------------
+Mobile and Tab users
+------------------- */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+        justify-content: center;
+    }
+    .influences{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .collection{
+        flex-direction: column;
+       
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .influences{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .collection{
+        flex-direction: column;
+       
+    }
+}
